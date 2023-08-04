@@ -41,6 +41,7 @@ a {
   padding-left: 15px;
   color: var(--color-3);
   transition: 600ms;
+  margin: 0;
 }
 .nav-links a:hover {
   color: var(--color-4);
@@ -52,15 +53,30 @@ a {
 }
 .flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+.main{
+  justify-content: space-between;
+
+}
+.main-header {
+  font-size: 40px;
+}
+.main-subsection {
+  font-size: 20px;
+  font-weight: 600;
 }
 .main-button {
   color: var(--color-3);
   background: var(--color-1);
   border: none;
-  padding: 8px 15px;
+  height: 40px;
   font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 23px;
+  letter-spacing: 0.2rem;
 }
 .main-button:hover {
   color: var(--color-4);
