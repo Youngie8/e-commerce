@@ -13,9 +13,12 @@ code {
 }
 :root {
   --color-1: #000;
-  --color-2: #778;
+  --color-2: #fdd981;
   --color-3: #fff;
-  --color-4: #18de67;
+  --color-4: #27ae60;
+}
+* {
+  transition: 600ms;
 }
 a {
   text-decoration: none;
@@ -81,29 +84,51 @@ button {
 button:hover {
   color: var(--color-4);
 }
-.featured {
+.trending {
   background: var(--color-1);
   color: var(--color-3);
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 100px;
+  text-align: center;
 }
-.featured .flex{
+.trending .flex{
   /* To be changed to grid... */
   justify-content: center;
 }
-.featured-header {
+.trending-header {
   padding-bottom: 30px;
 }
-.featured a {
+.trending a {
   color: var(--color-2);
-  padding: 30px;
+  margin: 30px;
 }
-.featured img {
-  border-radius: 15px;
+.trending a:hover {
+  color: var(--color-3)
+}
+.trending img {
   border: none;
+  margin: 0;
+  padding: 0;
 }
-.featured-button {
+.trending-button {
+  margin-top: 10px;
   background: var(--color-3);
   color: var(--color-1);
+}
+.flex-trending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: none;
+  padding-left: 30px;
+}
+/* Review */
+.grid {
+  display: grid;
+  grid: 150px / auto auto auto auto;
+}
+.grid-item {
+ border: 1px solid var(--color-2);
+ margin: 0 20px;
+ top: -50%
 }

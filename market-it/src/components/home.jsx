@@ -1,6 +1,7 @@
 import image1 from './images/image-1.png'
 import useFetch from './usefetch';
 import { Link } from 'react-router-dom'
+import Review from './review'
 
 const Home = () => {
     const { data: laptops} = useFetch('http://localhost:8000/laptops/');
@@ -9,8 +10,8 @@ const Home = () => {
         <div className="container">
             <div className="flex main">
                 <div className="col">
-                    <h2 className="main-header">Market-IT<span className="white">!</span></h2>
-                    <p className="main-subsection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusantium impedit quae numquam doloremque quas?</p>
+                    <h2 className="main-header">Tech<span className="white"> Treasures</span> For Every Need </h2>
+                    <p className="main-subsection">Market-IT: Your Hub for Cutting-edge Computers and Electronics - Unleash the Future Today!</p>
                     <Link to="/products">
                         <button className="main-button">Shop Now</button>
                     </Link>
@@ -20,22 +21,27 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className="featured">
-            <h2 className="featured-header"> Trending Products</h2>
+        <div className="trending">
+            <h2 className="trending-header"> Trend<span>ing Pro</span>ducts</h2>
             <div className="flex">
                 {laptops && laptops.map((laptop) => (
                 <div className="col" key={laptop.id}>
                     {laptop.id <= 3 && <Link to={`/products`}>
                             <img src={laptop.image} alt="" height={200} width={320} />
-                            <h2 className="featured-name">{laptop.name}</h2>
-                            <p className="featured-price">$ {laptop.price}</p>
+                            <div className="flex-trending">
+                            <h4 className="trending-name">{laptop.name}</h4>
+                            <p className="trending-price">${laptop.price}</p>
+                            </div>
                     </Link>}
                 </div>
                 ))}
             </div>
             <Link to="/products">
-                <button className="featured-button">View All Products</button>
+                <button className="trending-button">View All Products</button>
             </Link>
+        </div>
+        <div className="container">
+            <Review />
         </div>
     </div>
   )

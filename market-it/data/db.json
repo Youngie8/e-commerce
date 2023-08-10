@@ -2,7 +2,7 @@
     "laptops" :[
         {
             "name": "MacBook Pro 2015",
-            "image":"",
+            "image":"https://unsplash.com/photos/Hin-rzhOdWs",
             "price": 1099.99,
             "spec": {
                 "RAM": "8GB",
@@ -17,7 +17,7 @@
         },
         {
             "name": "HP Folio 1040 G3",
-            "image":" ",
+            "image":"https://unsplash.com/photos/DkaEkeK81KU",
             "price": 659.99,
             "spec": {
                 "RAM": "8GB",
@@ -32,7 +32,7 @@
         },
         {
             "name": "DeLL Inspiron 2021",
-            "image":"",
+            "image":"https://unsplash.com/photos/uWFFw7leQNI",
             "price": 354.99,
             "spec": {
                 "RAM": "8GB",
@@ -141,5 +141,32 @@
                 "id":4
             }
         }
+    ],
+    "users": [
+        {
+            "name": "Andrew tate",
+            "image": "",
+            "id": 1,
+            "comment": "The company values diligence. fast and secure"
+        },
+        {
+            "name": "Segun Orilu",
+            "image": "",
+            "id": 2,
+            "comment": "The company values diligence. fast and secure, with accomplished mindsets"
+        },
+        {
+            "name": "Mo Ahmed",
+            "image": "",
+            "id": 3,
+            "comment": "product delivered with 1 year warranty."
+        },
+        {
+            "name": "Ola Wade",
+            "image": "",
+            "id": 4,
+            "comment": "The company is a diligent company. Very secured"
+        }
+
     ]
 }
