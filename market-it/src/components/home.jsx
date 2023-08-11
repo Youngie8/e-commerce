@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Review from './review'
 
 const Home = () => {
-    const { data: laptops} = useFetch('http://localhost:8000/laptops/');
+    const { data: laptops, error} = useFetch('http://localhost:8000/laptops/');
   return (
     <div className='home'>
         <div className="container">
@@ -24,6 +24,7 @@ const Home = () => {
         <div className="trending">
             <h2 className="trending-header"> Trend<span>ing Pro</span>ducts</h2>
             <div className="flex">
+                {error && <div> { error }</div>}
                 {laptops && laptops.map((laptop) => (
                 <div className="col" key={laptop.id}>
                     {laptop.id <= 3 && <Link to={`/products`}>

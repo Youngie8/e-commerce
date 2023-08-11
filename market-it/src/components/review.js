@@ -4,6 +4,7 @@ const Review = () => {
   const {data: users, error} = useFetch('http://localhost:8000/users')  
   return (
     <div className="review">
+      <h3 className="review-header">Client's <span className="white">Reviews!</span></h3>
         <div className="grid">
             {error && <div> { error } </div>}
             { users && users.map((user) => (

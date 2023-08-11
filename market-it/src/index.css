@@ -12,10 +12,10 @@ code {
     monospace;
 }
 :root {
-  --color-1: #000;
-  --color-2: #fdd981;
+  --color-1: #000137;
+  --color-2: #253da1;
   --color-3: #fff;
-  --color-4: #27ae60;
+  --color-4: #B0DBF1;
 }
 * {
   transition: 600ms;
@@ -28,6 +28,8 @@ a {
 }
 /* Navbar section */
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,10 +127,26 @@ button:hover {
 /* Review */
 .grid {
   display: grid;
-  grid: 150px / auto auto auto auto;
+  grid: 250px / auto auto auto auto;
 }
 .grid-item {
- border: 1px solid var(--color-2);
- margin: 0 20px;
- top: -50%
+  margin: 0 20px;
+ text-align: center;
+ border-radius: 10px;
+ background: var(--color-2);
+ padding: 10px;
+ box-sizing: border-box;
+ color: var(--color-3);
+ font-weight:300;
+}
+.review-header {
+  text-align: center;
+  font-size: 26px;
+  padding-bottom: 30px;
+}
+.review-img {
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
