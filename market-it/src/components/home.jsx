@@ -10,7 +10,7 @@ const Home = () => {
         <div className="container">
             <div className="flex main">
                 <div className="col">
-                    <h2 className="main-header">Tech<span className="white"> Treasures</span> For Every Need </h2>
+                    <h2 className="main-header">Tech<span className="span-color-2"> Treasures</span> For Every Need </h2>
                     <p className="main-subsection">Market-IT: Your Hub for Cutting-edge Computers and Electronics - Unleash the Future Today!</p>
                     <Link to="/products">
                         <button className="main-button">Shop Now</button>
@@ -22,7 +22,7 @@ const Home = () => {
             </div>
         </div>
         <div className="trending">
-            <h2 className="trending-header"> Trend<span>ing Pro</span>ducts</h2>
+            <h2 className="trending-header"> Trend<span className="span-line">ing Pro</span>ducts</h2>
             <div className="flex">
                 {error && <div> { error }</div>}
                 {laptops && laptops.map((laptop) => (
