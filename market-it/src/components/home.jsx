@@ -1,7 +1,8 @@
-import image1 from './images/image-1.png'
+import image1 from './images/image-1.png';
 import useFetch from './usefetch';
-import { Link } from 'react-router-dom'
-import Review from './review'
+import { Link } from 'react-router-dom';
+import Review from './review';
+import Newsletter from './newsletter';
 
 const Home = () => {
     const { data: laptops, error} = useFetch('http://localhost:8000/laptops/');
@@ -44,6 +45,7 @@ const Home = () => {
         <div className="container">
             <Review />
         </div>
+        <Newsletter />
     </div>
   )
 }
