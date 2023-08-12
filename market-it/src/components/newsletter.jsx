@@ -9,7 +9,7 @@ const Newsletter = () => {
             <h2 className="newsletter-header">
               <span className="span-color-2">Join </span>
               Our
-              <span className="span-color-3">NewsLetter!</span>
+              <span className="span-color-2"> NewsLetter!</span>
             </h2>
             <p className="newsletter-substack">{ home }</p>
             <form action="">
