@@ -13,7 +13,7 @@ const About = () => {
           <p>In Africa, there are so many people who have lost out on devices and probably opportunities indirectly. Thus we decided to create an app-store where you can buy things at once, in installment or you save to buy.</p>
         </div>
         
-    </div>
+hn    </div>
   )
 }
 
