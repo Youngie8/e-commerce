@@ -28,6 +28,14 @@ code {
 a {
   text-decoration: none;
 }
+.front-qoute{
+  font-size: 42px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.back-qoute {
+  font-size: 42px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .span-color-2 {
   color: var(--color-2);
 }
@@ -230,3 +238,43 @@ form:focus-within {
   outline: 1px solid var();
 }
 
+/* About */
+.about {
+  background: var(--color-3);
+}
+.about-main {
+  height: calc(100vh - 70px);
+}
+.about-header {
+  color: var(--color-1);
+  text-align: center;
+  font-size: 30px;
+}
+.about-flex {
+  justify-content: space-between;
+}
+.about p {
+  font-size: 20px;
+}
+.problem, .solution {
+  height: 50vh;
+  width:40.5vw;
+  border-radius: 20px;
+  padding: 18px;
+  text-align: justify;
+  align-items: center;
+}
+.problem {
+  background: var(--color-4);
+  color: var(--color-1);
+}
+.problem-header {
+  text-align: left;
+}
+.solution {
+  background: var(--color-2);
+  color: var(--color-3);
+}
+.solution-header {
+  text-align: right;
+}

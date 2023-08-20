@@ -209,9 +209,7 @@ const Home = () => {
                 <button className="trending-button">View All Products</button>
             </Link>
         </div>
-        <div className="container">
-            <Review users={users} />
-        </div>
+        <Review users={users} />
         <Newsletter />
     </div>
   )
