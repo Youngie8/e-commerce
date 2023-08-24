@@ -116,6 +116,10 @@ button {
   font-size: 20px;
   font-weight: 500;
 }
+.main-img {
+  background: var(--color-4);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
 .main-button {
   background: var(--color-1);
   color: var(--color-3);
@@ -243,7 +247,7 @@ form:focus-within {
   background: var(--color-3);
 }
 .about-main {
-  height: calc(100vh - 70px);
+  padding: 40px 0;
 }
 .about-header {
   color: var(--color-1);

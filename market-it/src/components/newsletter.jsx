@@ -1,8 +1,5 @@
-import React from 'react'
-let substack = ""; 
-const about = "Get the latest deals first! See Our Exclusive Gadgets First!"
-const home = "Enjoy the best deals when you subscribe to our newsletter. Enjoy 5% discount on first purchase after subscription!"
-const Newsletter = () => {
+
+const Newsletter = ({ words }) => {
   return (
     <div className='newsletter'>
         <div className="container">
@@ -11,7 +8,7 @@ const Newsletter = () => {
               Our
               <span className="span-color-2"> NewsLetter!</span>
             </h2>
-            <p className="newsletter-substack">{ home }</p>
+            <p className="newsletter-substack">{ words }</p>
             <form action="">
               <input 
               type="text"

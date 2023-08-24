@@ -1,7 +1,9 @@
-import React from 'react'
-// import Review from './review'
+import Review from './review'
 import Newsletter from './newsletter'
-const About = () => {
+const About = (props) => {
+  const users = props.users;
+
+  const about = "Get the latest deals first! See Our Exclusive Gadgets First! Subscribe!"
   return (
     <div className="about">
         <div className='about-main'>
@@ -19,7 +21,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Newsletter />
+        <Review users={users} />
+        <Newsletter words={ about }/>
    </div>
   )
 }
