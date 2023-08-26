@@ -176,6 +176,7 @@ button {
   grid: 275px / auto auto auto auto;
   row-gap: 30px;
   column-gap: 30px;
+  justify-content: center;
 }
 .grid-item {
  text-align: center;
@@ -281,4 +282,36 @@ form:focus-within {
 }
 .solution-header {
   text-align: right;
+}
+/* Products */
+.grid-3{
+  display: grid;
+  grid: 275px / auto auto auto;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-content: center;
+}
+.laptops-header, .phones-header {
+  text-align: center;
+  padding: 30px 0;
+}
+.products {
+  padding-bottom: 50px;
+  background: var(--color-3);
+}
+/* ProductPreview */
+.collumn {
+  background: var(--color-1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
+  color: var(--color-3);
+}
+.collumn:hover {
+  background: var(--color-2);
+}
+.product-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: none;
+  font-weight: 200;
 }

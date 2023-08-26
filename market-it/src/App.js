@@ -184,7 +184,7 @@ const [users, setUsers] = useState([
         <Routes>
           <Route exact path='/' element={<Home users={users} laptops={laptops} />} />
           <Route path='/about' element={<About users={users}/>} />
-          <Route path='/products' element={<Products />} />
+          <Route path='/products' element={<Products laptops={laptops} phones={phones} />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/*' element={<Notfound />} />
         </Routes>

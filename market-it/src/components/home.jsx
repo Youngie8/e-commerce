@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Home = (props) => {
     const laptops = props.laptops;
     const users = props.users;
-    
+
     const home = "Enjoy the best deals when you subscribe to our newsletter. Enjoy 5% discount on first purchase after subscription!"
 
   return (
