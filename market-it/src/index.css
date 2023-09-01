@@ -1,18 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Righteous&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 html {
   scroll-behavior: smooth;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 :root {
   --color-1: #000137;
@@ -30,11 +25,11 @@ a {
 }
 .front-qoute{
   font-size: 42px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Righteous', cursive;
 }
 .back-qoute {
   font-size: 42px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Righteous', cursive;
 }
 .span-color-2 {
   color: var(--color-2);
@@ -56,6 +51,7 @@ button {
   border-radius: 5px;
   letter-spacing: 0.15rem;
   cursor: pointer;
+  font-family: 'Righteous', cursive;
 }
 .container {
   padding:0 5%;
@@ -67,7 +63,6 @@ button {
 }
 /* Navbar section */
 .navbar {
-  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -75,6 +70,7 @@ button {
   background: var(--color-1);
   height: var(--nav);
   padding: 0 5%;
+  position: sticky;
 }
 .nav-header {
   color: var(--color-4);
@@ -143,11 +139,11 @@ button {
   padding-bottom: 50px;
 }
 .trending a {
-  color: var(--color-4);
+  color: var(--color-3);
   margin: 30px;
 }
 .trending a:hover {
-  color: var(--color-2)
+  color: var(--color-2);
 }
 .trending img {
   border: none;
@@ -301,12 +297,13 @@ form:focus-within {
 }
 /* ProductPreview */
 .collumn {
-  background: var(--color-1);
+  border: 3px solid var(--color-1);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
-  color: var(--color-3);
+  color: var(--color-1);
 }
 .collumn:hover {
-  background: var(--color-2);
+  border: 3px solid var(--color-2);
+  color: var(--color-1);
 }
 .product-intro {
   display: flex;
@@ -314,4 +311,24 @@ form:focus-within {
   align-items: center;
   text-align: none;
   font-weight: 200;
+}
+
+
+/* Animations */
+@keyframes slide {
+  0%{
+    left: 0;
+  }
+  25%{
+    left: 100%;
+  }
+   50%{
+    left: 200%;
+  }
+  75%{
+    left: 300%;
+  }
+  100%{
+    left: 0;
+  }
 }

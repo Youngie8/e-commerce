@@ -6,11 +6,17 @@ import Cart from './components/cart';
 import Notfound from './components/notfound'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+import hp_elitebook1 from './components/images/hp_elitebook1.jpg'
+import hp_elitebook2 from './components/images/hp_elitebook2.jpg'
+import hp_elitebook3 from './components/images/hp_elitebook3.jpg'
+import lenovo_thinkpad1 from './components/images/lenovo_thinkpad1.jpg'
+import lenovo_thinkpad2 from './components/images/lenovo_thinkpad2.jpg'
+import lenovo_thinkpad3 from './components/images/lenovo_thinkpad3.jpg'
 function App() {
   const [laptops, setLaptops] = useState([
     {
         "name": "MacBook Pro 2015",
-        "image":"https://unsplash.com/photos/Hin-rzhOdWs",
+        "image":hp_elitebook2,
         "price": 1099.99,
         "spec": {
             "RAM": "8GB",
@@ -25,7 +31,7 @@ function App() {
     },
     {
         "name": "HP Folio 1040 G3",
-        "image":"https://unsplash.com/photos/DkaEkeK81KU",
+        "image": hp_elitebook3,
         "price": 659.99,
         "spec": {
             "RAM": "8GB",
@@ -40,7 +46,7 @@ function App() {
     },
     {
         "name": "DeLL Inspiron 2021",
-        "image":"https://unsplash.com/photos/uWFFw7leQNI",
+        "image":lenovo_thinkpad2,
         "price": 354.99,
         "spec": {
             "RAM": "8GB",
@@ -55,7 +61,7 @@ function App() {
     },
     {
         "name": "HP ProBook 650 G1",
-        "image":"",
+        "image": lenovo_thinkpad1,
         "price": 509.99,
         "spec": {
             "RAM": "16GB",
@@ -70,7 +76,7 @@ function App() {
     },
     {
         "name": "Lenovo XXX 2011",
-        "image":"",
+        "image":lenovo_thinkpad3,
         "price": 199.99,
         "spec": {
             "RAM": "4GB",

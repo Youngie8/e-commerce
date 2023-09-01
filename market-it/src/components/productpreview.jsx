@@ -14,7 +14,7 @@ const ProductPreview = (props) => {
             {console.log(product.id)}
             <img src={product.image} alt="" height={height} width={width} className="product-img" />
             <div className="product-intro">
-              <h4 className="product-name">{ product.name }</h4>
+              <h4 className="product-name">{ product.name }, { product.spec.RAM}</h4>
               <h4 className="product-price">${ product.price }</h4>
             </div>
           </Link>
