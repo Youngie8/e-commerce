@@ -13,6 +13,7 @@ import lenovo_thinkpad1 from './components/images/lenovo_thinkpad1.jpg';
 import lenovo_thinkpad2 from './components/images/lenovo_thinkpad2.jpg';
 import lenovo_thinkpad3 from './components/images/lenovo_thinkpad3.jpg';
 import Login from './components/login';
+import Signup from './components/signup';
 function App() {
   const [laptops, setLaptops] = useState([
     {
@@ -194,6 +195,7 @@ const [users, setUsers] = useState([
           <Route path='/products' element={<Products laptops={laptops} phones={phones} />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/signup' element={<Signup />} />
           <Route path='/*' element={<Notfound />} />
         </Routes>
       </div>

@@ -350,6 +350,8 @@ form:focus-within {
   background-color: green;
   color: var(--color-3);
 }
+/* Widths */
+
 /* Animations */
 @keyframes slide {
   0%{
