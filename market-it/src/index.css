@@ -6,6 +6,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 200, 0.8);
+  border-radius: 40px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -16,6 +24,9 @@ html {
   --color-4: #B0DBF1;
   --full: 100vh;
   --nav: 70px;
+}
+* {
+  outline: none;
 }
 a {
   text-decoration: none;
@@ -146,6 +157,7 @@ button {
   color: var(--color-2);
 }
 .trending img {
+  width: 280px;
   border: none;
   margin: 0;
   padding: 0;
@@ -244,7 +256,7 @@ form:focus-within {
   background: var(--color-3);
 }
 .about-main {
-  padding: 40px 0;
+  padding: 0px 0;
 }
 .about-header {
   color: var(--color-1);
@@ -258,12 +270,13 @@ form:focus-within {
   font-size: 20px;
 }
 .problem, .solution {
-  height: 50vh;
+  height: 60vh;
   width:40.5vw;
   border-radius: 20px;
-  padding: 18px;
+  padding: 10px;
+  margin: 20px;
   text-align: justify;
-  align-items: center;
+  overflow-y: scroll;
 }
 .problem {
   background: var(--color-4);
@@ -351,7 +364,83 @@ form:focus-within {
   color: var(--color-3);
 }
 /* Widths */
-
+@media screen and (max-width: 1024px) {
+  /* Home */
+  .main-img {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid: 300px / auto auto auto;
+  }
+  .grid-3 {
+    display: grid;
+    grid: 300px / auto auto;
+  }
+  /* About */
+  .about-flex {
+    display: block;
+  }
+  .problem, .solution {
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  /* nav */
+  .nav-links {
+    display: none;
+  }
+  /* Home */
+  .main-img {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid: 300px / auto auto;
+  }
+  .grid-3 {
+    display: grid;
+    grid: 300px / auto auto;
+  }
+  /* About */
+  .about-flex {
+    display: block;
+  }
+  .problem, .solution {
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+}
+@media screen and (max-width: 675px) {
+  /* nav */
+  .nav-links {
+    display: none;
+  }
+  /* Home */
+  .main-img {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid: 300px / auto ;
+  }
+  .grid-3 {
+    display: grid;
+    grid: 300px / auto ;
+  }
+  /* About */
+  .about-flex {
+    display: block;
+  }
+  .problem, .solution {
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+}
 /* Animations */
 @keyframes slide {
   0%{

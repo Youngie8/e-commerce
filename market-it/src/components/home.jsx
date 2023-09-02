@@ -21,17 +21,17 @@ const Home = (props) => {
                     </Link>
                 </div>
                 <div className="main-img">
-                    <img src={image1} alt="laptop" height={400} width={600} />
+                    <img src={image1} alt="laptop" />
                 </div>
             </div>
         </div>
         <div className="trending">
             <h2 className="trending-header"> Trend<span className="span-line">ing Pro</span>ducts</h2>
-            <div className="flex">
+            <div className="grid-3">
                 {laptops.map((laptop) => (
                 <div className="col" key={laptop.id}>
                     {laptop.id <= 3 && <Link to={`/products`}>
-                            <img src={laptop.image} alt="" height={200} width={320} />
+                            <img src={laptop.image} alt="" height={200} />
                             <div className="flex-trending">
                             <h4 className="trending-name">{laptop.name}</h4>
                             <p className="trending-price">${laptop.price}</p>
