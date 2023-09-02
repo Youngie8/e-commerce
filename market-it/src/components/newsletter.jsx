@@ -9,7 +9,7 @@ const Newsletter = ({ words }) => {
               <span className="span-color-2"> NewsLetter!</span>
             </h2>
             <p className="newsletter-substack">{ words }</p>
-            <form action="">
+            <form className="newsletter-form">
               <input 
               type="text"
               placeholder='myemail@mail.com'/>

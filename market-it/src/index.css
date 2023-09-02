@@ -17,11 +17,11 @@ html {
   --full: 100vh;
   --nav: 70px;
 }
-* {
-  transition: 400ms;
-}
 a {
   text-decoration: none;
+}
+input {
+  font-family: 'Righteous', cursive;
 }
 .front-qoute{
   font-size: 42px;
@@ -221,18 +221,18 @@ button {
   font-size: 18px;
   font-weight:500;
 }
-form {
+.newsletter-form {
   display: flex;
   flex-direction: row;
   border: 3px solid var(--color-2);
 }
-input {
+.newsletter-form input {
   flex-grow: 2;
   border: none;
   outline: none;
   padding-left: 4px;
 }
-.input:focus {
+.newsletter-form .input:focus {
   outline: none;
 }
 form:focus-within {
@@ -303,7 +303,7 @@ form:focus-within {
 }
 .collumn:hover {
   border: 3px solid var(--color-2);
-  color: var(--color-1);
+  color: var(--color-2);
 }
 .product-intro {
   display: flex;
@@ -312,8 +312,25 @@ form:focus-within {
   text-align: none;
   font-weight: 200;
 }
-
-
+.login {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.login label {
+  text-align: center;
+  display: block;
+  font-weight: 700;
+}
+.login input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px ;
+}
+.login-button {
+  background-color: var(--color-2);
+  color: var(--color-3)
+}
 /* Animations */
 @keyframes slide {
   0%{
