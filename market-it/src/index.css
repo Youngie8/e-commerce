@@ -213,9 +213,6 @@ button {
   width: 80px;
   border-radius: 50%;
 }
-.ye{
-  color: yellow;
-}
 /*  Newsletter */
 .newsletter {
   background: var(--color-4);
@@ -283,13 +280,16 @@ form:focus-within {
   margin: 20px;
   text-align: justify;
   overflow-y: scroll;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
 }
 .problem {
   background: var(--color-4);
   color: var(--color-1);
 }
-.problem-header {
-  text-align: left;
+.space-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .solution {
   background: var(--color-2);
@@ -350,7 +350,10 @@ form:focus-within {
   background-color: var(--color-2);
   color: var(--color-3)
 }
-
+/* Icons */
+.faexclamtriangle {
+  font-size: 35px;
+}
 /* Not Found */
 .notfound {
   text-align: center;
@@ -381,10 +384,6 @@ form:focus-within {
   .grid {
     display: grid;
     grid: 300px / auto auto auto;
-  }
-  .facart {
-    color: var(--color-3);
-    height: 20px;
   }
   .grid-3 {
     display: grid;
@@ -444,6 +443,12 @@ form:focus-within {
     display: grid;
     grid: 300px / auto ;
   }
+  .col {
+    margin: 0 auto;
+  }
+  .collumn {
+    margin: 0 auto;
+  }
   /* About */
   .about-flex {
     display: block;
@@ -452,7 +457,20 @@ form:focus-within {
     width: 90%;
     margin: 20px auto;
   }
-  
+  .login {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .login {
+    max-width: 200px;
+  }
+  .nav-header {
+    font-size: 20px;
+  }
+  .login-button{
+    height:30px;
+  }
 }
 /* Animations */
 @keyframes slide {
