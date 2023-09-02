@@ -315,10 +315,10 @@ form:focus-within {
 .login {
   max-width: 400px;
   text-align: center;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 .login label {
-  text-align: center;
+  text-align: left;
   display: block;
   font-weight: 700;
 }
@@ -330,6 +330,25 @@ form:focus-within {
 .login-button {
   background-color: var(--color-2);
   color: var(--color-3)
+}
+
+/* Not Found */
+.notfound {
+  text-align: center;
+  max-width: 400px;
+  margin: 100px auto;
+  color: var(--color-1);
+}
+.notfound p{
+  color: #000;
+}
+.err404 {
+  font-size: 80px;
+  line-height: 10px;
+}
+.notfound button {
+  background-color: green;
+  color: var(--color-3);
 }
 /* Animations */
 @keyframes slide {
