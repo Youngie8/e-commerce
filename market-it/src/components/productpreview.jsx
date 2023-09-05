@@ -10,7 +10,7 @@ const ProductPreview = (props) => {
   return (
     <div className={className}>
         {products?.map((product) => (
-          <Link to={"/products/" + "id"} className="collumn" key={product.id}>
+          <Link to={`/products/${products == props.laptops ?'laptops': "phones"}/${product.id}`} className="collumn" key={product.id}>
             {console.log(product.id)}
             <img src={product.image} alt="" height={height} width={width} className="product-img" />
             <div className="product-intro">

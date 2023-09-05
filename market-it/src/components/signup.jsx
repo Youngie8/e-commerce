@@ -6,6 +6,9 @@ const Signup = () => {
   const navigate = useNavigate();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [number, setNumber] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleSubmit = (e) => {
 
@@ -29,7 +32,25 @@ const Signup = () => {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)} />
-            <button className='login-button'> Login </button>
+            <label>Phone Number : </label>
+            <input 
+            type="number"
+            required
+            value={number}
+            onChange={(e) => setNumber(e.target.value)} />
+            <label>Password : </label>
+            <input 
+            type="password"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)} />
+            <label>Cornfirm Password : </label>
+            <input 
+            type="password"
+            required
+            value={password}
+            onChange={(e) => setConfirmPassword(e.target.value)} />
+            <button className='login-button'> Sign Up </button>
           </form>
       </div>
     )
