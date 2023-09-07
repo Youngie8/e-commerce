@@ -6,7 +6,13 @@ const Laptop = (props) => {
     const { id } = useParams();
   return (
     <div>
-        laptops section
+        { laptops && laptops.map((laptop) => {
+          <div>
+            { <div>
+              <h1>{laptop.id}</h1>
+              </div>}
+          </div>
+        })}
     </div>
   )
 }
