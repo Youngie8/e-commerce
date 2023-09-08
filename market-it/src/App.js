@@ -17,6 +17,7 @@ import Signup from './components/signup';
 import Phone from './components/phone';
 import Laptop from './components/laptop';
 function App() {
+  const [cart, setCart] = useState({});
   const [laptops, setLaptops] = useState([
     {
         "name": "MacBook Pro 2015",
