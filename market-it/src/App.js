@@ -109,8 +109,8 @@ const [phones, setPhones] = useState([
             },
             "Storage":"64GB",
             "Network": "LTE, 4G, 3G, 2G",
-            "id": 1
-        }
+        },
+        "id": 1
     },
     {
         "name": "Samsung S23",
@@ -125,8 +125,8 @@ const [phones, setPhones] = useState([
             },
             "Storage":"128GB",
             "Network": "LTE, 4G, 3G, 2G",
-            "id": 2
-        }
+        },
+        "id": 2
     },
     {
         "name": "Huawei M13  pro",
@@ -141,8 +141,8 @@ const [phones, setPhones] = useState([
             },
             "Storage":"128GB",
             "Network": "4G, 3G, 2G",
-            "id":3
-        }
+        },
+        "id":3
     },
     {
         "name": "Samsung A23",
@@ -157,8 +157,8 @@ const [phones, setPhones] = useState([
             },
             "Storage":"256GB",
             "Network": "4G, 3G, 2G",
-            "id":4
-        }
+        },
+        "id":4
     }
 ])
 const [users, setUsers] = useState([
@@ -199,8 +199,8 @@ const [users, setUsers] = useState([
           <Route path='/login' element={<Login />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='/products/phones/:id' element={<Phone />} />
-          <Route path='/products/laptops/:id' element={<Laptop />} />
+          <Route path='/products/:id' element={<Phone />} />
+          <Route path='/products/:id' element={<Laptop />} />
           <Route path='/*' element={<Notfound />} />
         </Routes>
       </div>
