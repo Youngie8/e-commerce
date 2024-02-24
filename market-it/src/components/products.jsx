@@ -3,8 +3,7 @@ import ProductPreview from './productpreview'
 const Products = (props) => {
   const laptops = props.laptops;
   const phones = props.phones;
-  console.log(laptops);
-  console.log(phones);
+  
 
   return (
     <div className="products">

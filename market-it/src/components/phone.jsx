@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Phone = () => {
+const Phone = ({ phone }) => {
   return (
-    <div>Phone</div>
+    <div>
+      <h1> {phone.name} </h1>
+    </div>
   )
 }
 
